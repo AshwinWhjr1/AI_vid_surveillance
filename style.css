@@ -1,0 +1,56 @@
+body
+{
+    background-size: cover;
+    background-image: fill;
+}
+
+.heading
+{
+    font-size: 23px;
+    width:100%;
+    margin: 0px;
+}
+#Start, #no_of_objects, #stat
+{
+    font-size: 18px;
+}
+
+.copy_right_footer
+{
+    position: fixed !important;
+    color:rgb(255, 0, 0);
+    bottom:0;
+    width:100% !important;
+    text-align: center;
+    line-height: 3;
+    background-color: rgb(255, 217, 0);
+}
+canvas
+{
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+    border-radius: 10px;
+    animation : shadow-pulse 10s infinite;
+    margin-top: 60px !important;
+    
+}
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 25px red;
+  }
+  25%{
+    box-shadow: 0 0 30px rgb(0, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 20px , 0 0 30px rgb(255, 0, 255);
+  }
+  75%{
+    box-shadow: 0 0 30px , 0 0 30px rgb(255, 166, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px rgb(37, 37, 255);
+  }
+}
