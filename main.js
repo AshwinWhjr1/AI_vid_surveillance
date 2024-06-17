@@ -13,7 +13,7 @@ function preload()
 function setup() 
 {
 
-    canvas = createCanvas(480, 380);
+    canvas = createCanvas(640, 360);
     canvas.center();
     video.hide();
     
@@ -54,7 +54,7 @@ function gotResult(error, results)
 function draw()
 {
 
-    image(video, 0, 0, 480, 380);
+    image(video, 0, 0, 640, 360);
     if(stat !="")
     {
         objectDetector.detect(video, gotResult);
